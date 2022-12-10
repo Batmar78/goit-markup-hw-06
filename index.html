@@ -75,8 +75,8 @@
         <div class="backdrop is-hidden" data-modal>
           <div class="modal">
             <button data-modal-close type="button" class="btn-modal-close">
-              <svg class="icon-close" width="30px" height="30px">
-                <use href="./images/close.svg"></use>
+              <svg class="icon-close" width="18px" height="18px">
+                <use href="./images/icons.svg#icon-Close"></use>
               </svg>
             </button>
             <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
@@ -105,7 +105,7 @@
                 </svg>
               </div>
 
-              <div class="form-field">
+              <div class="form-field comment">
                 <label for="coment" class="form-label">Коментар</label>
                 <textarea
                   class="form-input-textarea"
@@ -117,19 +117,19 @@
               </div>
 
               <div class="form-field form-consent">
-                <input
-                  class="form-input"
-                  type="checkbox"
-                  name="consent"
-                  id="consent"
-                />
-                <label for="consent" class="form-label"
-                  >Погоджуюся з розсилкою та приймаю
-                  <a href="#">Умови договору</a></label
+                <label class="form-label">
+                  <input
+                    class="form-input-chekbox"
+                    type="checkbox"
+                    name="consent"
+                  />
+                  <span class="icon-checbox"></span>
+                  Погоджуюся з розсилкою та приймаю
+                  <a class="conditions" href="#">Умови договору</a></label
                 >
               </div>
 
-              <button type="submit">Відправити</button>
+              <button type="submit" class="btn-submit">Відправити</button>
             </form>
           </div>
         </div>
@@ -668,6 +668,22 @@
               </a>
             </li>
           </ul>
+        </div>
+        <div class="foter-form">
+          <h2 class="section-title">Підпишіться на розсилку</h2>
+          <form class="Subscr-form">
+            <div class="foter-form-field">
+              <label for="mail" class="foter-form-label"></label>
+              <input
+                class="foter-form-input"
+                type="email"
+                name="mail"
+                id="mail"
+                placeholder="E-mail"
+              />
+            </div>
+            <button type="submit" class="btn-Subscr">Підписатися</button>
+          </form>
         </div>
       </div>
     </footer>
