@@ -366,8 +366,8 @@ img {
   cursor: pointer;
 }
 
-.icon-close:hover,
-.icon-close:focus {
+.btn-modal-close:hover .icon-close,
+.btn-modal-close:focus .icon-close {
   fill: #2196f3;
 }
 
@@ -448,11 +448,16 @@ textarea::placeholder {
 .modal-form > .form-consent {
   flex-direction: row;
   font-size: 14px;
+  margin-bottom: 30px;
 }
 
 .form-consent > .form-label {
   display: flex;
   align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 14px;
+  line-height: 1.7;
 }
 
 .form-input-chekbox {
@@ -485,6 +490,16 @@ textarea::placeholder {
 
   border: 2px solid var(--title-text-color);
   border-radius: 2px;
+  transform: scale(1);
+  transition: background-color var(--time-animation) var(--timing-function),
+    transform var(--time-animation) var(--timing-function);
+}
+
+.icon-checbox:hover,
+.icon-checbox:focus {
+  cursor: pointer;
+  border: 2px solid var(--accent-color);
+  transform: scale(1.01);
 }
 
 .conditions {
@@ -505,16 +520,13 @@ textarea::placeholder {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: none;
-  transform: scale(1);
-  transition: background-color var(--time-animation) var(--timing-function),
-    transform var(--time-animation) var(--timing-function);
+  transition: background-color var(--time-animation) var(--timing-function);
 }
 
 .btn-submit:hover,
 .btn-submit:focus {
   cursor: pointer;
   background-color: #188ce8;
-  transform: scale(1.01);
 }
 
 /* FEATURES */
