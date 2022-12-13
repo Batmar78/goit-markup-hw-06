@@ -325,8 +325,7 @@ img {
   top: 50%;
   left: 50%;
   padding: 40px;
-  min-width: 528px;
-  min-height: 581px;
+  width: 528px;
   background-color: var(--primary-white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -403,6 +402,8 @@ img {
   border-radius: 4px;
   transition: border var(--time-animation) var(--timing-function);
 }
+
+.form-input-chekbox:focus + .icon-checbox,
 .form-input-textarea:focus,
 .form-input:focus {
   border: 1px solid var(--accent-color);
@@ -479,6 +480,12 @@ textarea::placeholder {
   background-repeat: no-repeat;
   background-origin: border-box;
   background-position: center;
+  transition: background-color var(--time-animation) var(--timing-function);
+}
+
+.form-input-chekbox:checked + .icon-checbox:hover,
+.form-input-chekbox:checked + .icon-checbox:focus {
+  background-color: #188ce8;
 }
 
 .icon-checbox {
@@ -512,6 +519,7 @@ textarea::placeholder {
   height: 50px;
   font-weight: 700;
   font-size: 16px;
+  padding: 0;
   line-height: 1.88;
   letter-spacing: 0.06em;
 
